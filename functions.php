@@ -71,3 +71,13 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Load StudioUp Custom functions.
+ */
+require get_template_directory() . '/inc/studioup.php';
+
+/**
+ * Load Custom Post Type.
+ */
+//require get_template_directory() . '/inc/custom-posttype.php';
