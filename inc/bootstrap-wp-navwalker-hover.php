@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
-class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+class WP_Bootstrap_Navwalker_Hover extends Walker_Nav_Menu {
 	/**
 	 * The starting level of the menu.
 	 *
@@ -106,7 +106,7 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 			if ( $args->has_children && $depth === 0 ) {
 				$atts['href']        = ! empty( $item->url ) ? $item->url : '';
-				$atts['data-toggle'] = 'dropdown';
+				$atts['data-toggle'] = 'dropdown-hover';
 				$atts['class']       = 'nav-link dropdown-toggle';
 			} else {
 				$atts['href']  = ! empty( $item->url ) ? $item->url : '';
